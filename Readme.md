@@ -1,7 +1,6 @@
 # Project Title
 
-Learning IoT and mqtt implementation using esp32
-
+Using ML to predict rain and weather and deploying it on a mini-weather station 
 ## Features
 
 Uses Workwi simulator
