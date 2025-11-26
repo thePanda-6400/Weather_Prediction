@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Dhruv",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 100,
+      "left": 100
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": 200,
+      "left": 200,
+      "attrs": { "temperature": "23", "humidity": "50" }
+    }
+  ],
+  "connections": [
+    [ "dht:VCC", "pico:3V3", "red" ],
+    [ "dht:GND", "pico:GND", "black" ],
+    [ "dht:SDA", "pico:GP15", "green" ]
+  ]
+}
